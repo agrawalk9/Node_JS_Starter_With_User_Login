@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(userRouter);
 app.use(taskRouter);
 
+//port should be fetched from env file
 app.listen(port, () => {
     console.log("Server is up on port " + port);
 });
